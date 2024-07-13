@@ -23,7 +23,21 @@
 </script-->
 
     <script src="js/disabling.js"></script>
-
+    <style>
+        .grid-container {
+          display: grid;
+          grid-template-columns: auto auto ;
+          background-color: #2196F3;
+          padding: 10px;
+        }
+        .grid-item {
+          background-color: rgba(255, 255, 255, 0.8);
+          border: 1px solid rgba(1, 0, 0, 0.8);
+          padding: 20px;
+          font-size: 30px;
+          text-align: center;
+        }
+        </style>
 </head>
 
 <body>
@@ -55,11 +69,20 @@
 
         <aside>
             <!-- indica que é um conteúdo a parte do princial, auxiliar-->
-            <h1>Acontece no IFSP!</h1>
-            <figure>
-                <img src="Imagens/SEJA_RARO.jpg" alt="Palestra Seja Raro" width="50%" height="50%">
-                <figcaption>Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</figcaption>
-            </figure>
+            <div class="grid-container">
+                <div class="grid-item">    
+                    <figure>
+                    <img src="eleicoes.jpg" alt="Eleições no IFSP PTB" width="50%" height="50%">
+                   <center> <h5>RADAR IFSP: Informe-se sobre as eleições de 13 de outubro</h5> </center>
+                   
+                </figure>
+            </div>
+                <div class="grid-item">2</div>
+               <div class="grid-item">3  </div>
+                <div class="grid-item">4</div>
+              
+              </div> <h1>Acontece no IFSP!</h1>
+          
         </aside>
 
         <section>
