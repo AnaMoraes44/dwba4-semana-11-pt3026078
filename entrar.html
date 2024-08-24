@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <title>Entrar - IFSP - Pirituba</title>
   <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon"> <!-- Adiciona o ícone de aba de navegador-->
   <link rel="stylesheet" href="css/formularios.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <script src="js/disabling.js"></script>
+  <style>
+    .logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 10%; 
+    }
+  </style>
 </head>
 <body>
   
@@ -13,33 +22,36 @@
     <nav>
       <object width="100%" height="200px" data="menu.html"></object>
     </nav>    
-    
   </header>
   
-  <main> <!-- indica que é o conteúdo principal dessa página -->
-		<h1>Entrar</h1>
-        <form method="POST">
-            <div>
-                <label for="entrar-usuario">Usuário</label>
-                <input type="text" name="usuario" id="entrar-usuario" required />
-            </div>
-            <br>
-            <div>
-                <label for="entrar-senha">Senha</label>
-                <input type="password" name="senha" id="entrar-senha" required />
-            </div>
-            <br>
-            <div>
-                <input type="submit" value="Entrar">
-                <a href="#">Esqueci a senha</a>
-            </div>
-        </form>
+  <main class="container mt-5"> <!-- indica que é o conteúdo principal dessa página -->
+    <div class="text-center mb-4">
+      <img src="ifsp.png" alt="Logo IFSP" class="img-fluid logo">
+    </div> 
+    <h1 class="text-center">Faça Login</h1>
+    <form method="POST">
+      <div class="form-group">
+        <label for="entrar-usuario">Usuário</label>
+        <input type="text" class="form-control" name="usuario" id="entrar-usuario" required />
+      </div>
+      <div class="form-group">
+        <label for="entrar-senha">Senha</label>
+        <input type="password" class="form-control" name="senha" id="entrar-senha" required />
+      </div>
+      <div class="form-group">
+         <a href="#" class="float-right">Esqueci a senha</a>
+        <input type="submit" class="btn btn-primary btn-block" value="Entrar">
+     
+      </div>
+    </form>
   </main>
   
   <footer>     
-      <object width="100%" height="200px" data="rodape.html"></object>
+    <object width="100%" height="200px" data="rodape.html"></object>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
